@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID 찾기</title>
+    <link rel="stylesheet" href="../../source/css/logo.css">
+    <link rel="stylesheet" href="../../source/css/findIdPw.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../menu/menu.html"> <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
+        </div>
+    </header>
+
+    <div id="find_id_wrap">
+        <div id="find_id_title">Find ID</div>
+        <form id="findId_form" validate>
+            <div class="input_wrap">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="이름" required>
+                <div class="find_phoneNum">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" maxlength="15" placeholder="-를 포함하여 입력해주세요.">
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <button href="../pages/menu/menu.html">Find</button>
+            </div>
+        </form>
+        <div class="findIdPw">
+            <a href="../auth/findPw.html">Find PW | <a href="../auth/index.html" target="_self">Sign In</a></a> | <a
+                href="../auth/sign_up.html">Sign Up</a>
+        </div>
+    </div>
+</body>
+
+</html>
