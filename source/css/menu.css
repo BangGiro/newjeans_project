@@ -76,8 +76,9 @@ main {
 }
 
 .menu_list {
+    
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 2vw;
     color: rgb(230, 221, 221);
     transition-property: font-size;
     transition-duration: .5s;
@@ -136,7 +137,7 @@ main {
 .icon a {
     display: inline;
     position: relative;
-    font-size: 25px;
+    font-size: 2vw;
     transition-property: font-size;
     transition-duration: 1s;
     color: gray;
@@ -165,11 +166,11 @@ h6{
     font-size: 0.01px;
 }
 .icon a:nth-of-type(3) {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 .icon a:nth-of-type(3):hover {
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 
