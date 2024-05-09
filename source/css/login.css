@@ -1,7 +1,7 @@
 #login_wrap {
     background-color: rgba(255, 255, 255, 0.9);
     width: 50vh;
-    margin: calc(50vh - 15%) auto;
+    margin: calc(50vh - 10%) auto;
     padding: 30px 50px 30px;
     border-radius: 10px;
 }
@@ -59,9 +59,11 @@ input[type="password"] {
     transition: background-color 0.3s;
 
 }
-.btn_wrap button span{
+
+.btn_wrap button span {
     font-size: 16px;
 }
+
 #newAccount {
     display: block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -96,16 +98,18 @@ input[type="password"] {
 /* 아이디 비밀번호 찾기 창 */
 .findIdPw {
     position: relative;
-    top:5px;
-    
+    top: 5px;
+
     font-size: 12px;
     text-align: center;
 }
-.findIdPw a:nth-of-type(1){
+
+.findIdPw a:nth-of-type(1) {
     border-right: gray;
 }
 
-.findIdPw a, .findIdPw a:visited {
+.findIdPw a,
+.findIdPw a:visited {
     text-decoration: none;
     color: gray;
 
@@ -113,7 +117,14 @@ input[type="password"] {
 
 .findIdPw a:hover {
     text-decoration: none;
-    color:lightslategray;
+    color: lightslategray;
     font-weight: bolder;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #login_wrap {
+        width: 40vh;
+        margin: calc((50vh - 10%) / 2) auto;
+    }
 }

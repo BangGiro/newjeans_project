@@ -1,7 +1,7 @@
 #find_id_wrap {
     background-color: rgba(255, 255, 255, 0.8);
-    width: 60vh;
-    margin: calc(50vh - 15%) auto;
+    width: 50vh;
+    margin: calc(50vh - 10%) auto;
     padding: 30px 50px 30px;
     border-radius: 10px;
 }
@@ -15,21 +15,22 @@
     margin-bottom: 20px;
 }
 
-.input_wrap {
+#find_id_wrap .input_wrap {
     text-align: center;
     margin-top: 5px;
 }
 
-.input_wrap label {
+#find_id_wrap .input_wrap label {
     margin-right: 10px;
 }
 
-.input_wrap input[type="text"] {
-    width: calc((80% - 50px));
+#find_id_wrap .input_wrap input[type="text"] {
+    width: 50%;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid black;
     border-radius: 5px;
 }
 
@@ -56,6 +57,19 @@
 }
 
 /* Find PW */
+#find_pw_wrap {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50vh;
+    margin: calc(50vh - 10%) auto;
+    padding: 30px 50px 30px;
+    border-radius: 10px;
+}
+
+/* #find_pw_title{
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(3,1fr)
+} */
+
 
 .findIdPw {
     text-align: center;
@@ -75,13 +89,6 @@
     cursor: pointer;
 }
 
-#find_pw_wrap {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 60vh;
-    margin: calc(50vh - 15%) auto;
-    padding: 30px 50px 30px;
-    border-radius: 10px;
-}
 
 #find_pw_title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -98,31 +105,74 @@
 }
 
 #find_pw_wrap .input_wrap label {
+    /* display: inline-block; */
+    width: 50%;
     margin-right: 10px;
 }
 
+#findPw_form .input_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+#findPw_form .input_wrap label {
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: end;
+}
+
+#findPw_form .input_wrap label+input {
+    grid-column: 2/ span 2;
+    align-self: center;
+
+
+
+
+}
+
+/* .input_wrap>label+div {
+    display: inline-block;
+
+} */
+#findPw_form label[for="email"]+div {
+
+    grid-column: 2/ span 2;
+    display: flex;
+}
+
 #find_pw_wrap .input_wrap input[type="text"] {
-    width: calc((90% - 100px));
+    width: calc((80% - 40px));
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid black;
     border-radius: 5px;
 }
 
+
+
 #find_pw_wrap .input_wrap input[type="email"] {
-    width: calc((80% - 140px));
+    /* width: calc((80% -120px)); */
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid black;
     border-radius: 5px;
+}
+
+#findPw_form .input_wrap>label+div {
+    width: 80%;
+    box-sizing: border-box;
 }
 
 #send {
-    display: inline-block;
+    /* display: inline-block; */
+    height: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px 20px;
+    margin-left: 5px;
+    padding: 8px 10px;
     background-color: lightblue;
     color: #fff;
     text-decoration: none;
@@ -173,21 +223,64 @@
 }
 
 @media screen and (max-width: 768px) {
-    #find_pw_title {
+    #find_id_wrap {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 40vh;
+        margin: calc(40vh - 20%) auto;
+        padding: 30px 50px 30px;
+        border-radius: 10px;
+    }
+
+    #find_pw_wrap {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 40vh;
+        margin: calc(40vh - 20%) auto;
+        padding: 30px 50px 30px;
+        border-radius: 10px;
+    }
+
+    #find_pw_title,
+    #find_id_title {
         font-size: 1.3rem;
     }
 
-    .input_wrap {
+    #findPw_form .input_wrap {
         width: 100%;
     }
 
-    #find_pw_wrap .input_wrap input[type="email"] {
+    #findPw_form .input_wrap>label+div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #find_pw_wrap .input_wrap input[type="email"],
+    #find_pw_wrap .input_wrap input[type="text"] {
+        width: calc((80% - 40px));
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 5px;
+    }
+
+    /* #find_pw_wrap .input_wrap input[type="email"] {
         width: calc((80% - 150px));
         padding: 10px;
         box-sizing: border-box;
         margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
-    }
+    } */
+    /* #find_pw_wrap .input_wrap input[type="email"] {
+        width: calc((80% - 150px));
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    } */
 
 }
