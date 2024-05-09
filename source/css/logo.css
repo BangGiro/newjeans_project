@@ -66,7 +66,7 @@ footer {
     display: flex;
     align-items: center;
 
-    font-size: 12px;
+    font-size: 0.85vw;
     /* font-weight: bold; */
     color: gray;
 }
@@ -77,10 +77,10 @@ footer {
 }
 
 .href svg {
-    width: 25px;
+    width: 1.6vw;
     margin: 0 3px;
     fill: gray;
-    
+
 
     transition-duration: 1s;
 }
