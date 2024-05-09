@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-    width: 400px;
+    width: 23vw;
     margin: 20px 0;
 }
 
@@ -60,13 +60,15 @@ footer {
     height: 50px;
 
     grid-template: 1fr / 130px 8fr 1fr;
+
+    user-select: none;
 }
 
 .container div {
     display: flex;
     align-items: center;
 
-    font-size: 0.85vw;
+    font-size: 12px;
     /* font-weight: bold; */
     color: gray;
 }
@@ -77,7 +79,7 @@ footer {
 }
 
 .href svg {
-    width: 1.6vw;
+    width: 25px;
     margin: 0 3px;
     fill: gray;
 
