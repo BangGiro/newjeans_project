@@ -6,7 +6,7 @@
     user-select: none;
 }
 
-h4 {
+h1 {
     text-indent: -9999em;
 
 }
@@ -189,7 +189,7 @@ main {
     }
 }
 
-h6 {
+h2 {
     font-size: 0.01px;
 }
 
